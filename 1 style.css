@@ -1,0 +1,48 @@
+
+
+.navbar a,
+.collection span {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Collection container */
+.collection {
+  position: relative;
+}
+
+/* Dropdown menu */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background: white;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown a:hover {
+  background: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;   /* center all items */
+  gap: 40px;                 /* space between items */
+  background: black;
+  padding: 15px 0;
+  color:white;
+}
+.collection:hover .dropdown {
+  display: block;
+}
